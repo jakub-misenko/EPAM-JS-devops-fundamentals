@@ -1,0 +1,9 @@
+Avaliable commands:
+
+help - Shows manual with available commands.
+add - Adds a new line in database from user prompt.
+find - Find user in database from user prompt.
+backup - Copy data to another file.
+list - Lists all available data in from users.db.
+list --inverse - Lists all available data in users.db in reverse.
+restore - Restore data from the latest backup.
