@@ -1,7 +1,7 @@
 #!/bin/bash
 
 checkFile() {
-  if [[ -z "$1" && "$1" != "help" && ! -f ../data/users.db ]]; then
+  if [[ -z $1 && $1 != "help" && ! -f ../data/users.db ]]; then
     read -p "File does not exist. Do you want to create users.db? [yes/no] " answer
     
     if [[ $answer == "yes" ]]; then
@@ -41,7 +41,7 @@ add() {
 }
 
 backup() {
-  if [[ ! -d ./data/backups ]]; then
+  if [[ ! -d ../data/backups ]]; then
     mkdir ../data/backups
   fi 
 
@@ -102,6 +102,4 @@ case $1 in
     find ;;
   list)
     list ;;
-  help | '')
-    help ;;
 esac
