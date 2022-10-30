@@ -10,5 +10,4 @@
 *.sig
 
 pkg/
-src/
 .DS_Store
