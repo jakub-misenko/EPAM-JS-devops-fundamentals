@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: prod
+    volumes:
+      - .:/usr/src/app
+    command: npm run start:prod
+    ports:
+      - 3000:3000
